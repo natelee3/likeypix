@@ -1,0 +1,17 @@
+{
+  "name": "LikeyPix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:connect": "psql postgres://nyoywpvj:hoQiPLFMU-79VRZO4ao71ZKdBzz4xSmH@batyr.db.elephantsql.com/nyoywpvj",
+    "db:init": "psql -f schema.sql postgres://nyoywpvj:hoQiPLFMU-79VRZO4ao71ZKdBzz4xSmH@batyr.db.elephantsql.com/nyoywpvj",
+    "db:seed": "psql -f seed.sql postgres://nyoywpvj:hoQiPLFMU-79VRZO4ao71ZKdBzz4xSmH@batyr.db.elephantsql.com/nyoywpvj",
+    "db:drop": "psql -f reset.sql postgres://nyoywpvj:hoQiPLFMU-79VRZO4ao71ZKdBzz4xSmH@batyr.db.elephantsql.com/nyoywpvj",
+    "db:reset": "npm run db:drop; npm run db:init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

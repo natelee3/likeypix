@@ -1,0 +1,11 @@
+DROP TABLE users CASCADE;
+
+DROP TABLE posts CASCADE;
+
+DROP TABLE tags CASCADE;
+
+DROP TABLE tags_posts;
+
+DROP TABLE likes;
+
+DROP TABLE comments;
